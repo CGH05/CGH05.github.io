@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Camera Showcase - Home</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      text-align: center;
+      position: sticky; top: 0; z-index: 10;
+    }
+    nav a {
+      color: #fff; margin: 0 15px; text-decoration: none; font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ff9500; }
+    main {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+    }
+    h1 { font-size: 2.5rem; margin-bottom: 20px; }
+    h2 { font-size: 1.8rem; color: #ff9500; margin: 30px 0 15px; }
+    p { margin-bottom: 20px; font-size: 1.1rem; }
+    .image-row {
+      display: flex; justify-content: center; gap: 20px; margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .image-row img {
+      width: 250px; border-radius: 20px; transition: transform 0.3s;
+    }
+    .image-row img:hover { transform: scale(1.05); }
+    footer {
+      background: rgba(43, 42, 42, 0.85);
+      text-align: center; padding: 20px; margin-top: 160px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+  </nav>
+
+  <main>
+    <h1>Welcome to My Camera Showcase</h1>
+    <p>Discover top camera brands with stunning visuals. Explore Canon, Sony, and Nikon – perfect for photography enthusiasts!</p>
+    <div class="image-row">
+      <img src="Canon1.jpeg.jpeg" alt="Canon Camera">
+      <img src="Sony.jpeg.jpeg" alt="Sony Camera">
+      <img src="Nikon.jpeg.jpeg" alt="Nikon Camera">
+    </div>
+    <h2>Why Choose Us?</h2>
+    <p>We offer the latest models from top brands with expert advice and great prices. Perfect for professionals and hobbyists alike.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Camera Showcase. All rights reserved.</p>
+  </footer>
+</body>
+</html>
