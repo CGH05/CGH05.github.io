@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - My Camera Showcase</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff9500;
+    }
+
+    /* Content */
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .brand-section {
+      margin: 50px 0;
+      text-align: left;
+    }
+
+    .brand-section h2 {
+      font-size: 1.8rem;
+      color: #ff9500;
+      margin-bottom: 20px;
+      border-left: 5px solid #ff9500;
+      padding-left: 10px;
+    }
+
+    .camera-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .camera-card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .camera-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .camera-card img {
+      width: 70%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: rgba(43, 42, 42, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 160px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>About Our Camera Brands</h1>
+    <p style="text-align:center;">Here are some of the latest and most popular cameras from Canon, Nikon, and Sony. Explore the features that make each brand special.</p>
+
+    <!-- Canon -->
+    <div class="brand-section">
+      <h2>Canon</h2>
+      <div class="camera-grid">
+        <div class="camera-card">
+          <img src="canon2.jpeg" alt="Canon EOS R5">
+          <h3>Canon EOS R5</h3>
+          <p>A professional mirrorless camera with 45MP, 8K video, and incredible autofocus performance.</p>
+        </div>
+        <div class="camera-card">
+          <img src="Canon3.png" alt="Canon EOS 90D">
+          <h3>Canon EOS 90D</h3>
+          <p>A DSLR with 32.5MP resolution, great for action and wildlife photography, offering versatility and speed.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nikon -->
+    <div class="brand-section">
+      <h2>Nikon</h2>
+      <div class="camera-grid">
+        <div class="camera-card">
+          <img src="Nikon1.webp" alt="Nikon Z7 II">
+          <h3>Nikon Z7 II</h3>
+          <p>A high-resolution mirrorless camera with 45.7MP, dual processors, and outstanding image quality.</p>
+        </div>
+        <div class="camera-card">
+          <img src="Nikon2.png" alt="Nikon D7500">
+          <h3>Nikon D7500</h3>
+          <p>A powerful DSLR with 20.9MP sensor, 4K UHD video, and advanced low-light performance.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sony -->
+    <div class="brand-section">
+      <h2>Sony</h2>
+      <div class="camera-grid">
+        <div class="camera-card">
+          <img src="sony3.png" alt="Sony A7 IV">
+          <h3>Sony A7 IV</h3>
+          <p>A hybrid full-frame mirrorless camera with 33MP, 4K 60fps video, and advanced autofocus tracking.</p>
+        </div>
+        <div class="camera-card">
+          <img src="Sony2.webp" alt="Sony RX100 VII">
+          <h3>Sony RX100 VII</h3>
+          <p>A compact powerhouse with 1-inch sensor, fast autofocus, and excellent travel photography features.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Camera Showcase. All rights reserved.</p>
+  </footer>
+</body>
+</html>
